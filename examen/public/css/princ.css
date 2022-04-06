@@ -1,0 +1,248 @@
+/**make a placeholder for an explicit grid based on areas*/
+body {
+  display: -ms-grid;
+  display: grid;
+  width: 98%;
+      grid-template-areas: "area1 area2" "area3 area4" "area5 area6" "area7 area8";
+  -ms-grid-columns: 47% 47%;
+      grid-template-columns: 47% 47%;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  gap: 5%;
+}
+
+.area1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: area1;
+}
+
+.area2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: area2;
+}
+
+.area3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: area3;
+}
+
+.area4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: area4;
+}
+
+.area5 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: area5;
+}
+
+.area6 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: area6;
+}
+
+.area7 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: area7;
+}
+
+.area8 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: area8;
+}
+
+@media all and (max-width: 700px) {
+  body {
+        grid-template-areas: "area1" "area2" "area3" "area4" "area5" "area6" "area7" "area8";
+  }
+  .area1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: area1;
+  }
+  .area2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: area2;
+  }
+  .area3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: area3;
+  }
+  .area4 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: area4;
+  }
+  .area5 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: area5;
+  }
+  .area6 {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    grid-area: area6;
+  }
+  .area7 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    grid-area: area7;
+  }
+  .area8 {
+    -ms-grid-row: 8;
+    -ms-grid-column: 1;
+    grid-area: area8;
+  }
+}
+
+.imageng img {
+  width: 100%;
+}
+
+.fotos {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  padding: 1%;
+  gap: 5px;
+  -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.fotos img {
+  width: 150px;
+  -webkit-transition: -webkit-transform .2s all ease-in-out;
+  transition: -webkit-transform .2s all ease-in-out;
+  transition: transform .2s all ease-in-out;
+  transition: transform .2s all ease-in-out, -webkit-transform .2s all ease-in-out;
+}
+
+.fotos img :hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.contactobot {
+  list-style: none;
+  color: black;
+  margin: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4%;
+}
+
+.contactobot li {
+  list-style: none;
+  color: black;
+  border: none;
+  margin: 2%;
+}
+
+.contactobot span {
+  color: #85bd7d;
+  margin: 2%;
+  -webkit-transition: background-color ease-in-out 200ms;
+  transition: background-color ease-in-out 200ms;
+}
+
+.bp {
+  border: none;
+  background-color: #b2cab1;
+  list-style: none;
+  width: 30%;
+}
+
+.bp p {
+  display: inline;
+  margin: 4%;
+}
+
+.bp span {
+  color: #85bd7d;
+  margin: 2%;
+  -webkit-transition: background-color ease-in-out 200ms;
+  transition: background-color ease-in-out 200ms;
+}
+
+.goto {
+  text-decoration: none;
+  text-align: center;
+}
+
+button {
+  border: none;
+  background-color: #b2cab1;
+}
+
+button:hover {
+  -webkit-animation-name: anim;
+          animation-name: anim;
+  -webkit-animation-duration: 600ms;
+          animation-duration: 600ms;
+}
+
+@-webkit-keyframes anim {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: yellow;
+  }
+}
+
+@keyframes anim {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: yellow;
+  }
+}
+
+h1, h2 {
+  text-align: center;
+  color: #326604;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p {
+  color: #112e03;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 5%;
+}
+
+label {
+  color: #112e03;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 5%;
+}
+
+body {
+  background-color: darkolivegreen;
+}
+
+.area1, .area3, .area5, .area7 {
+  background-color: darkseagreen;
+}
+
+.area2, .area4, .area6, .area8 {
+  background-color: darkseagreen;
+}
+
+form {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=princ.css.map */

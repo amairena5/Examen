@@ -1,0 +1,17 @@
+@mixin bot{
+list-style: none;
+color: $btext;
+margin: 2%;
+
+}
+
+@mixin spans{
+    color: $span;
+    margin: 2%;
+    transition: background-color ease-in-out 200ms;
+}
+
+@mixin bots{
+    border: none;
+    background-color: $bbg;
+}

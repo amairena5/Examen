@@ -1,0 +1,14 @@
+.fotos{
+    display: grid;
+    width: 100%;
+    padding: 1%;
+    gap: 5px;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    img{
+        width: 150px;
+        transition: transform .2s all ease-in-out;
+        :hover{
+        transform: scale(1.2);
+        }
+    }
+}

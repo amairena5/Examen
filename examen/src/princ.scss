@@ -1,0 +1,26 @@
+
+@import "config/variables";
+@import "config/mixins";
+@import "components/grid";
+@import "components/imageng";
+@import "components/fotos";
+@import "components/botones";
+@import "components/texto";
+
+
+
+body{
+@extend %gridareas;
+background-color: #ffb3ba;
+}
+
+.area1,.area3,.area5,.area7{
+background-color: #ffffba;
+}
+.area2,.area4,.area6,.area8{
+background-color: #ffffba;
+}
+
+form{
+    align-items: center;
+}

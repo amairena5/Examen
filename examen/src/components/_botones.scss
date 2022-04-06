@@ -1,0 +1,47 @@
+.contactobot{
+    @include bot;
+    li{
+    list-style: none;
+    color: $btext;
+    border: none;
+    margin: 2%;
+    };
+    display: flex;
+    padding: 4%;
+    span{
+        @include spans;
+    }
+}
+
+.bp{
+    @include bots;
+    list-style: none;
+    width: 30%;
+    p{
+     display: inline;
+     margin: 4%;   
+    }
+    span{
+        @include spans;
+    }}
+
+
+
+.goto{
+    text-decoration: none;
+    text-align: center;
+}
+
+
+button{
+    @include bots;
+
+    &:hover{
+    @keyframes anim {
+            from {background-color: red;}
+            to {background-color: yellow;}
+        }
+        animation-name: anim;
+        animation-duration: 600ms;
+    }
+}
